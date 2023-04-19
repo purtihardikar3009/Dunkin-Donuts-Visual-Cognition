@@ -1,0 +1,422 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.cover-image {
+    background-image: url('path/to/your/image.jpg');
+    height: 400px;
+    background-size: cover;
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #E11383;
+}
+
+
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #E11383;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: black;
+}
+
+
+
+
+.cover-image {
+    background-image: url('https://s3.amazonaws.com/cms.ipressroom.com/285/files/20203/Dunkin-Sprinkling-Joy.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #E11383;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom:2rem;
+    line-height: 10%;
+    
+}
+
+p2 {
+  font-size: 1.0rem;
+  margin-bottom:2rem;
+  line-height: 10%;
+font-style: italic;
+text-align: center;
+  
+}
+
+
+.circle-button {
+    margin-top: 1rem;
+}
+
+.circle-button a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f5821F;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.circle-button a i {
+    font-size: 1rem;
+    color: black;
+}
+
+.circle-button a:hover i {
+    color: #000000;
+}
+
+@media (max-width: 767px) {
+    h1 {
+    font-size: 2rem;
+    }
+    p {
+    font-size: 1.2rem;
+    }
+    .circle-button a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    }
+    .circle-button a i {
+    font-size: 1.5rem;
+    }
+}
+
+
+
+#flexbox {
+    display:flex;
+    flex-direction: row;
+}
+
+.sticky {
+    position:sticky;
+    top: 30px;
+}
+
+#sidebar {
+    float:left;
+    background-color:#d97f3a;
+    padding: 10px 5px;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    margin-left: 10px;
+    padding: 0;
+    color:gray;
+}
+
+#sidebar li {
+    padding-left: 0px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    font-size:14px;
+}
+
+#sidebar h3:after {
+    content: ">";
+    padding-left: 8px;
+    color:#E11383;
+    font-size: small;
+}
+
+#sidebar h3 {
+    padding-left: 0px;
+    padding-bottom: 10px;
+    font-size:medium
+}
+
+#sidebar a {
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+#sidebar a:hover {
+    color:#d34718;
+}
+
+#content {
+    width:95%;
+    margin-right: 2%;
+    padding-top:85px;
+    padding-left: 60px;
+}
+
+#main-body {
+    overflow:auto;
+}
+
+.maintext {
+    margin-right: 5%;
+    margin-bottom: 8%;
+}
+
+#content p {
+    line-height: 32px;
+}
+
+#content li {
+    padding-bottom: 15px;
+}
+
+#content ol li {
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+img {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+.scroll-section {
+    height: 1000px;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.animated-element {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animated-element.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+ 
+
+
+
+
+introsection {
+  display: block;
+}
+
+interactive {
+  display: block;
+}
+
+mainsection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+@media screen and (min-width: 35rem) {
+  mainsection {
+    flex-direction: row;
+  }
+}
+mainsection > * {
+  flex: 1;
+}
+
+intro {
+  padding: 0 1rem;
+}
+intro p {
+  font-family: Helvetica;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+@media screen and (min-width: 35rem) {
+  intro p {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 35rem) {
+  intro p:not(:last-of-type) {
+    min-height: 20vh;
+  }
+}
+intro quote {
+  font-family: Helvetica;
+  font-size: 1.4rem;
+  line-height: 3.4;
+  text-align: center;
+  color: #E11383;
+}
+@media screen and (min-width: 35rem) {
+  intro quote {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 35rem) {
+  intro quote:not(:last-of-type) {
+    min-height: 10vh;
+  }
+}
+
+article {
+  padding: 0 1rem;
+}
+article p {
+  font-family: 'Poppins', Helvetica, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+@media screen and (min-width: 35rem) {
+  article p {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 35rem) {
+  article p:not(:last-of-type) {
+    min-height: 90vh;
+  }
+}
+
+figure {
+  align-items: center;
+  align-self: flex-start;
+  display: flex;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  justify-content: center;
+  top: 5rem;
+}
+@media screen and (min-width: 35rem) {
+  figure {
+    position: sticky;
+  }
+}
+
+
+  /* FOOTER*/
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 8px;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+}
+
+footer::before {
+  content: "\00A9";
+  font-size: 8px;
+  margin-right: 5px;
+}
+
+
+::selection {
+  background-color: yellow;
+  color: black;
+}
+
+
+  /* CHART JAVASCFRIPT */
+
+#chart {
+  width: 90%;
+  height: 80vh;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+
+.axisLabel {
+font-size: 16pt;
+font-weight: bold;
+}
+
+.axis {
+font-size: 12pt;
+}
+
+.tooltip {
+  /* THE FOLLOWING PROPERTIES
+  ARE REQUIRED TO MAKE THE TOOLTIP
+  WORK CORRECTLY */
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  visibility: hidden;
+  pointer-events: none;
+  
+  /* THE FOLLOWING PROPERTIES ARE
+  OPTIONAL AND AESTHETIC */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  background-color:rgba(255, 238, 126, 0.5);
+  padding: 2px;
+}
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
